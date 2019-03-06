@@ -8,13 +8,11 @@ import './index.css';
 import { create } from 'domain';
 
 ReactDOM.render(
-<BrowserRouter>
-    <Router history={createBrowserHistory()}>
+<BrowserRouter history={createBrowserHistory()}>
         <Switch>
             <Route exact path='/' component={App} />
-            <Route path='/jokes' component={Jokes} />
+            <Route exact path='/jokes' component={Jokes} />
         </Switch>
-    </Router>
 </BrowserRouter>,
  document.getElementById('root'));
 
